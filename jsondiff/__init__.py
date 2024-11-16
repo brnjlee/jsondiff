@@ -589,7 +589,7 @@ class SymmetricJsonDiffSyntax:
                     else:
                         a[k] = self.patch(a[k], v)
                 return a
-            elif isinstance(a, (list, tuple)):
+            elif isinstance(a, list):
                 original_type = type(a)
                 a = list(a)
                 if delete in d:
